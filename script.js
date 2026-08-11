@@ -1,7 +1,4 @@
-/* 
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Other/javascript.js to edit this template
- */
+
 
 function sayHello() {
     alert("Welcome to Tshepi's Hair Journey Website!");
@@ -33,5 +30,29 @@ window.onload = function() {
         button.innerHTML = "🌙 Dark Mode";
     }
 };
-document.getElementById("date").innerHTML =
-"DATE: " + new Date().toDateString();
+
+// Show button when scrolling down
+window.onscroll = function () {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    const topBtn = document.getElementById("topBtn");
+
+    if (!topBtn) return;
+
+    if (document.body.scrollTop > 300 ||
+        document.documentElement.scrollTop > 300) {
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
+    }
+}
+
+// Scroll to top
+function topFunction() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
