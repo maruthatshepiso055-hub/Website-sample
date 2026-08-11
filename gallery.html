@@ -2,68 +2,114 @@
 <html>
 <head>
     <title>Gallery</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style.css">
 </head>
 
 <body>
 
-<div class="sidebar">
-    <h2>Menu</h2>
+    <button id="themeBtn" class="theme-button" onclick="toggleDarkMode()">
+        🌙 Dark Mode
+    </button>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About My Hair</a></li>
-            <li><a href="routine.html">Routine</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</div>
+    <div class="sidebar">
+        <h2>Menu</h2>
 
-<div class="container">
-
-    <h1>Hair Gallery</h1>
-
-    <div class="gallery">
-        <img src="../photos/2023.jpeg" alt="Hair Image 1">
-        <img src="../photos/may 3.jpeg" alt="Hair Image 2">
-        <img src="../photos/20207.JPEG" alt="Hair Image 3">
-         <img src="../photos/2023 dec.JPEG" alt="Hair Image 4">
-          <img src="../photos/2023 march.JPEG" alt="Hair Image 5">
-           <img src="../photos/2023 nov.JPEG" alt="Hair Image 6">
-            <img src="../photos/jan 26.JPEG" alt="Hair Image 7">
-             <img src="../photos/april2.JPEG" alt="Hair Image 8">
-              <img src="../photos/april2020.JPEG" alt="Hair Image 9">
-               <img src="../photos/april3.JPEG" alt="Hair Image 10">
-                <img src="../photos/july 2.JPEG" alt="Hair Image 11">
-                 <img src="../photos/dec 25.JPEG" alt="Hair Image 12">
-                  <img src="../photos/feb 2025.JPEG" alt="Hair Image 13">
-                   <img src="../photos/feb 26.JPEG" alt="Hair Image 14">
-                    <img src="../photos/jan 2 26.JPEG" alt="Hair Image 15">
-                     <img src="../photos/july.JPEG" alt="Hair Image 16">
-                      <img src="../photos/june 2.JPEG" alt="Hair Image 17">
-                       <img src="../photos/may 26.JPEG" alt="Hair Image 18">
-                        <img src="../photos/june 26.JPEG" alt="Hair Image 19">
-                         <img src="../photos/mar 26.JPEG" alt="Hair Image 20">
-                          <img src="../photos/march 2.JPEG" alt="Hair Image 21">
-                           <img src="../photos/march 26.JPEG" alt="Hair Image 22">
-                            <img src="../photos/march 3.JPEG" alt="Hair Image 23">
-                            <img src="../photos/march 4.JPEG" alt="Hair Image 24">
-                            <img src="../photos/march 5.JPEG" alt="Hair Image 25">
-                            <img src="../photos/nov 2025.JPEG" alt="Hair Image 26">
-                            <img src="../photos/sep 4 2025.JPEG" alt="Hair Image 27">
-                            <img src="../photos/sep 2 2025.JPEG" alt="Hair Image 28">
-                            
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About My Hair</a></li>
+                <li><a href="routine.html">Routine</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </div>
 
+    <div class="container">
+
+       <h1>Hair Gallery</h1>
+
+<p class="gallery-intro">
+    Explore my natural hair journey from my 2017 big chop to healthy growth,
+    protective styles, and hair colour experiments. </p>
+    
+    <p> Click any image below to view it in a larger size.</p>
+
+<h2>My Hair Growth Through The Years</h2>
+
+        <div class="timeline">
+
+          <div class="milestone">
+    <h3>2017</h3>
+    <p>✂️ Big Chop</p>
 </div>
 
-<footer>
-    <p>&copy; 2026 Tshepiso Marutha | Hair Growth Journey Website</p>
-</footer>
+<div class="milestone">
+    <h3>2018</h3>
+    <p>🌱 Started Natural Hair Journey</p>
+</div>
+
+<div class="milestone">
+    <h3>2025</h3>
+    <p>✨ Dyed Hair Caramel Blonde</p>
+</div>
+
+<div class="milestone">
+    <h3>2026</h3>
+    <p>💕 Healthy Growth & Protective Styles</p>
+</div>
+
+        </div>
+
+        <div class="large-image-container">
+            <img id="largeImage" src="photos/jan 26.JPEG" alt="Large Hair Photo">
+        </div>
+
+        <div class="gallery">
+
+            <img src="photos/2023.jpeg" alt="Hair Image 1" onclick="showImage(this)">
+            <img src="photos/may 3.jpeg" alt="Hair Image 2" onclick="showImage(this)">
+            <img src="photos/20207.JPEG" alt="Hair Image 3" onclick="showImage(this)">
+            <img src="photos/2023 dec.JPEG" alt="Hair Image 4" onclick="showImage(this)">
+            <img src="photos/2023 march.JPEG" alt="Hair Image 5" onclick="showImage(this)">
+            <img src="photos/2023 nov.JPEG" alt="Hair Image 6" onclick="showImage(this)">
+            <img src="photos/jan 26.JPEG" alt="Hair Image 7" onclick="showImage(this)">
+            <img src="photos/april2.JPEG" alt="Hair Image 8" onclick="showImage(this)">
+            <img src="photos/april2020.JPEG" alt="Hair Image 9" onclick="showImage(this)">
+            <img src="photos/april3.JPEG" alt="Hair Image 10" onclick="showImage(this)">
+            <img src="photos/july 2.JPEG" alt="Hair Image 11" onclick="showImage(this)">
+            <img src="photos/dec 25.JPEG" alt="Hair Image 12" onclick="showImage(this)">
+            <img src="photos/feb 2025.JPEG" alt="Hair Image 13" onclick="showImage(this)">
+            <img src="photos/feb 26.JPEG" alt="Hair Image 14" onclick="showImage(this)">
+            <img src="photos/jan 2 26.JPEG" alt="Hair Image 15" onclick="showImage(this)">
+            <img src="photos/july.JPEG" alt="Hair Image 16" onclick="showImage(this)">
+            <img src="photos/june 2.JPEG" alt="Hair Image 17" onclick="showImage(this)">
+            <img src="photos/may 26.JPEG" alt="Hair Image 18" onclick="showImage(this)">
+            <img src="photos/june 26.JPEG" alt="Hair Image 19" onclick="showImage(this)">
+            <img src="photos/mar 26.JPEG" alt="Hair Image 20" onclick="showImage(this)">
+            <img src="photos/march 2.JPEG" alt="Hair Image 21" onclick="showImage(this)">
+            <img src="photos/march 26.JPEG" alt="Hair Image 22" onclick="showImage(this)">
+            <img src="photos/march 3.JPEG" alt="Hair Image 23" onclick="showImage(this)">
+            <img src="photos/march 4.JPEG" alt="Hair Image 24" onclick="showImage(this)">
+            <img src="photos/march 5.JPEG" alt="Hair Image 25" onclick="showImage(this)">
+            <img src="photos/nov 2025.JPEG" alt="Hair Image 26" onclick="showImage(this)">
+            <img src="photos/sep 4 2025.JPEG" alt="Hair Image 27" onclick="showImage(this)">
+            <img src="photos/sep 2 2025.JPEG" alt="Hair Image 28" onclick="showImage(this)">
+
+        </div>
+
+        <div class="quote-box">
+            "Healthy hair is not achieved overnight. It is built through patience,
+            consistency, and self-care."
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Tshepiso Marutha | Hair Growth Journey Website</p>
+        </footer>
 
     </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
