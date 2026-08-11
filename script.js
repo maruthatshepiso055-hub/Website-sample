@@ -1,8 +1,4 @@
 
-
-function sayHello() {
-    alert("Welcome to Tshepi's Hair Journey Website!");
-}
 function showImage(image) {
     document.getElementById("largeImage").src = image.src;
 }
