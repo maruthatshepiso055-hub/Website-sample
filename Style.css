@@ -330,23 +330,26 @@ h2{
     display: inline-block;
     margin-top: 20px;
     background-color: skyblue;
-    color: white;
+    color: white !important;
     padding: 12px 25px;
     border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 18px;
 }
 
 .hero-btn:hover {
     background-color: #5bbce8;
+    color: white !important;
 }
 
 .dark-mode .hero-btn {
     background-color: #87CEEB;
-    color: #111;
+    color: black !important;
+    font-weight: bold;
 }
 
 .dark-mode .hero-btn:hover {
     background-color: #5bbce8;
-    color: #111;
+    color: black !important;
 }
