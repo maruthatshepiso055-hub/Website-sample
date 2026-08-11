@@ -31,7 +31,6 @@ window.onload = function() {
     }
 };
 
-// Show button when scrolling down
 window.onscroll = function () {
     scrollFunction();
 };
@@ -49,7 +48,6 @@ function scrollFunction() {
     }
 }
 
-// Scroll to top
 function topFunction() {
     window.scrollTo({
         top: 0,
