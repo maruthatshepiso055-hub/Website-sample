@@ -325,3 +325,28 @@ h2{
     margin: 0 0 20px 20px;
     border-radius: 15px;
 }
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: skyblue;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-btn:hover {
+    background-color: #5bbce8;
+}
+
+.dark-mode .hero-btn {
+    background-color: #87CEEB;
+    color: #111;
+}
+
+.dark-mode .hero-btn:hover {
+    background-color: #5bbce8;
+    color: #111;
+}
