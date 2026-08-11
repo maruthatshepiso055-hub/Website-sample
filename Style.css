@@ -58,8 +58,15 @@ body {
 .container {
     margin-left: 250px;
     padding: 20px;
+    width: calc(100% - 250px);
+    box-sizing: border-box;
 }
 
+.container p {
+    line-height: 1.8;
+    font-size: 18px;
+    text-align: justify;
+}
 
 .sidebar nav{
     background-color: transparent;
@@ -109,7 +116,7 @@ footer {
     padding: 15px;
     margin-top: 40px;
     width: 100%;
-    box-sizing: border-box;
+    clear: both;
 }
 
 
@@ -129,10 +136,8 @@ h2{
     object-fit: cover;
     border-radius: 10px;
 }
-
 #contact {
-    margin-left: 250px;
-    padding: 50px;
+    padding: 50px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -157,7 +162,7 @@ h2{
     justify-content: space-between;
     align-items: flex-start;
     gap: 40px;
-    width: 100%;
+    padding: 20px 0;
 }
 
 .routine-text {
@@ -313,4 +318,10 @@ h2{
     line-height: 1.6;
     margin-bottom: 25px;
     max-width: 800px;
+}
+.about-photo {
+    width: 300px;
+    float: right;
+    margin: 0 0 20px 20px;
+    border-radius: 15px;
 }
